@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Ehab | Network Security</title>
+  <meta name="description" content="Information Systems student focused on network security, vulnerability assessment and ethical hacking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="header__name" href="#top">Ahmed Ehab</a>
+    <nav class="nav">
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Network security, from the firewall down to the packet.</h1>
+        <p>I’m Ahmed Ehab Abdalmeged, an Information Systems student at New Cairo University (class of 2028). I build and test secure networks, and I’m learning to find weaknesses before attackers do.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn" href="https://github.com/magribi1/Ahmed-Ehap-Abd-Elmged">GitHub</a>
+        </div>
+      </div>
+      <pre class="scan" aria-label="Summary of skills shown as a network scan"><span class="scan__cmd">$ nmap -sV ahmed.local</span>
+PORT     STATE  SERVICE
+22/tcp   open   networking
+         <span class="scan__dim">TCP/IP, VLANs, OSPF, Subnetting</span>
+443/tcp  open   firewalls
+         <span class="scan__dim">Huawei USG, ACLs, VPN, IPS</span>
+80/tcp   open   web-security
+         <span class="scan__dim">OWASP Top 10, Burp Suite</span>
+8080/tcp open   recon
+         <span class="scan__dim">Nmap, Nessus, Wireshark</span>
+<span class="scan__dim">Scan done: 4 services up</span></pre>
+    </section>
+
+    <section id="skills" class="row">
+      <h2>Skills</h2>
+      <div id="skills-list" class="skills"></div>
+    </section>
+
+    <section id="certifications" class="row">
+      <h2>Certifications</h2>
+      <ul class="items">
+        <li>
+          <h3>HCIA-Security</h3>
+          <p>Earned through NTI. Covers network security concepts, common threats and prevention, firewall security policies, NAT, hot standby and intrusion prevention, encryption fundamentals, PKI, and IPSec/SSL VPN.</p>
+        </li>
+        <li>
+          <h3>CCNA</h3>
+          <p>Completed online. Covers switching, VLANs, inter-VLAN routing, static and dynamic routing, and troubleshooting.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="training" class="row">
+      <h2>Training</h2>
+      <ul class="items">
+        <li>
+          <h3>Network Security Internship, NTI</h3>
+          <p>One-month training focused on network security.</p>
+        </li>
+        <li>
+          <h3>Hands-on labs</h3>
+          <p>Switching, VLANs, static and dynamic routing, OSPF, and Huawei firewall configuration, built in Cisco Packet Tracer and Huawei eNSP.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="row">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>I’m open to internships and entry-level security roles. Email is the fastest way to reach me.</p>
+        <a class="contact__email" href="mailto:ahmedeyhab521@gmail.com">ahmedeyhab521@gmail.com</a>
+        <p class="contact__links">
+          <a href="https://github.com/magribi1/Ahmed-Ehap-Abd-Elmged">GitHub</a>
+          <a href="https://www.linkedin.com/in/ahmed-ehap-75a44a354">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Ahmed Ehab Abdalmeged</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
