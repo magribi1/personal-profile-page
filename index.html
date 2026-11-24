@@ -1,199 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Ahmed Ehap</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Ehab | Network Security</title>
+  <meta name="description" content="Information Systems student focused on network security, vulnerability assessment and ethical hacking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="header__name" href="#top">Ahmed Ehab</a>
+    <nav class="nav">
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <body>
-    <div class="container">
-
-
-      <video class="video-loop" autoplay loop muted>
-        <source src="./video-loop.mp4" type="video/mp4" />
-      </video>
-
-
-      <header class="header">
-        <label for="menu" class="burger-menu">
-          <div class="burger-menu__bar"></div>
-          <div class="burger-menu__bar"></div>
-          <div class="burger-menu__bar"></div>
-        </label>
-
-        <input id="menu" class="burger-menu__checkbox" type="checkbox" >
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li>
-              <a class="navigation__link navigation__bio" href="#bio">Bio</a>
-            </li>
-            <li>
-              <a class="navigation__link navigation__skills" href="#skills">Skills</a>
-            </li>
-            <li>
-              <a class="navigation__link navigation__projects" href="#projects">Projects</a>
-            </li>
-            <li>
-              <a class="navigation__link navigation__contact" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-
-
-
-        <div class="toggle">
-          <h3 class="toggle__title">Switch Theme</h3>
-          <input id="toggle" class="toggle__checkbox" type="checkbox" />
-          <label class="toggle__label" for="toggle"></label>
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Network security, from the firewall down to the packet.</h1>
+        <p>I’m Ahmed Ehab Abdalmeged, an Information Systems student at New Cairo University (class of 2028). I build and test secure networks, and I’m learning to find weaknesses before attackers do.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn" href="https://github.com/magribi1/Ahmed-Ehap-Abd-Elmged">GitHub</a>
         </div>
-      </header>
+      </div>
+      <pre class="scan" aria-label="Summary of skills shown as a network scan"><span class="scan__cmd">$ nmap -sV ahmed.local</span>
+PORT     STATE  SERVICE
+22/tcp   open   networking
+         <span class="scan__dim">TCP/IP, VLANs, OSPF, Subnetting</span>
+443/tcp  open   firewalls
+         <span class="scan__dim">Huawei USG, ACLs, VPN, IPS</span>
+80/tcp   open   web-security
+         <span class="scan__dim">OWASP Top 10, Burp Suite</span>
+8080/tcp open   recon
+         <span class="scan__dim">Nmap, Nessus, Wireshark</span>
+<span class="scan__dim">Scan done: 4 services up</span></pre>
+    </section>
 
+    <section id="skills" class="row">
+      <h2>Skills</h2>
+      <div id="skills-list" class="skills"></div>
+    </section>
 
-      <section id="bio" class="section bio">
-        <div class="bio__data">
-          <h1 class="bio__heading">Hi There, I’M A Passionate Frontend Developer.</h1>
-          <p class="bio__objective">
-            My name is <span class="bio__name">Ahmed Ehap</span>, Frontend Developer passionate about building clean, user-friendly web experiences and continuously improving my skills.
-          </p>
-          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
-          <a class="bio__links find-out-link" download="CV_Ahmed_Ehab_EN.pdf" href="./CV_Ahmed_Ehab_EN.pdf">
-            Download CV <span class="bio__arrow">↓</span>
-          </a>
-        </div>
-        <div class="bio__pic-content">
-          <img class="bio__pic" src="./img/482027986_634808109407727_3052429658156785336_n_1_-removebg-preview.png" alt="personal pic of Mohamed Abusrea" />
-        </div>
-      </section>
+    <section id="certifications" class="row">
+      <h2>Certifications</h2>
+      <ul class="items">
+        <li>
+          <h3>HCIA-Security</h3>
+          <p>Earned through NTI. Covers network security concepts, common threats and prevention, firewall security policies, NAT, hot standby and intrusion prevention, encryption fundamentals, PKI, and IPSec/SSL VPN.</p>
+        </li>
+        <li>
+          <h3>CCNA</h3>
+          <p>Completed online. Covers switching, VLANs, inter-VLAN routing, static and dynamic routing, and troubleshooting.</p>
+        </li>
+      </ul>
+    </section>
 
+    <section id="training" class="row">
+      <h2>Training</h2>
+      <ul class="items">
+        <li>
+          <h3>Network Security Internship, NTI</h3>
+          <p>One-month training focused on network security.</p>
+        </li>
+        <li>
+          <h3>Hands-on labs</h3>
+          <p>Switching, VLANs, static and dynamic routing, OSPF, and Huawei firewall configuration, built in Cisco Packet Tracer and Huawei eNSP.</p>
+        </li>
+      </ul>
+    </section>
 
-      <section id="skills" class="section-skills skills section--with-bg">
-        <h2 class="h2-heading">Skills</h2>
+    <section id="contact" class="row">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>I’m open to internships and entry-level security roles. Email is the fastest way to reach me.</p>
+        <a class="contact__email" href="mailto:ahmedeyhab521@gmail.com">ahmedeyhab521@gmail.com</a>
+        <p class="contact__links">
+          <a href="https://github.com/magribi1/Ahmed-Ehap-Abd-Elmged">GitHub</a>
+          <a href="https://www.linkedin.com/in/ahmed-ehap-75a44a354">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-        <ul class="skills__list">
-          <li class="skills__column">
-            <h2 class="skills__title">HTML</h2>
-            <span class="skills__years">1 year</span>
-          </li>
-          <li class="skills__column">
-            <h2 class="skills__title">CSS</h2>
-            <span class="skills__years">1 year</span>
-          </li>
-          <li class="skills__column">
-            <h2 class="skills__title">Javascript</h2>
-            <span class="skills__years">1 year</span>
-          </li>
-          <li class="skills__column">
-            <h2 class="skills__title">React</h2>
-            <span class="skills__years">1 year</span>
-          </li>
-        </ul>
-      </section>
-
-
-      <section id="projects" class="section projects">
-  <h2 class="h2-heading">
-    MY PERSONAL <br/>
-    PROJECTS
-  </h2>
-  <div class="projects__main">
-        <img class="projects__img responsive-img" src="img/Boxly – All Your Services in One Place.png" alt="Product Card Project" />
-
-    <div class="projects__data">
-      <h3 class="h3-heading">
-        Boxly – All Your Services<br/>
-        in One Place
-      </h3>
-      <p class="projects__description">
-        Boxly is a company specialized in delivering innovative digital solutions, from website and application development to frontend services and user experience design, as well as advanced technical consulting. We strive to transform ideas into successful digital projects that bring real value to our clients.
-      </p>
-    </div>
-    <div class="projects__data">
-      <h3 class="h3-heading">
-        Projects That Showcase <br />
-         My Skills
-      </h3>
-      <p class="projects__description">
-        Here’s a collection of my recent work, ranging from sleek and responsive websites to interactive components and practical tools. Each project reflects my commitment to clean code, modern design, and delivering user-friendly digital experiences.
-      </p>
-    </div>
-    <img class="projects__img responsive-img" src="img/MyProjects_Page_Project.png" alt="Link in Bio Project" />
-  
-  </div>
-      </section>
-
-
-      <section id="contact" class="section contact">
-        <div>
-          <p class="contact__description">
-            Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time
-            zones away.
-          </p>
-
-          <a href="mailto:ahmedeyhab521@gmail.com?subject=Contact%20from%20your%20website&body=Hello%20CNC%2C%20I%20would%20like%20to%20connect%20with%20you." class="contact__email">Contact me via Email</a>
-          <div class="contact__socials">
-            <a class="contact__social" href="https://www.facebook.com/ahmed.ehap.901984" target="_blank">
-              <img src="./img/brand/facebook.svg" alt="facebook" />
-            </a>
-            <a class="contact__social" href="https://x.com/a7med_ehap1" target="_blank">
-              <img src="./img/brand/twitter.svg" alt="twitter" />
-            </a>
-            <a class="contact__social" href="https://github.com/ahmedehap111/Ahmed-Ehap-Abd-Elmged" target="_blank">
-              <img src="./img/brand/github.svg" alt="github" />
-            </a>
-            <a class="contact__social" href="https://www.instagram.com/a7med_ehap/" target="_blank">
-              <img src="./img/brand/instagram.svg" alt="instagram.svg" />
-            </a>
-            <a class="contact__social" href="https://www.linkedin.com/in/ahmedehap-75a44a354/" target="_blank">
-              <img src="./img/brand/LinkedIn.svg" alt="LinkedIn.svg" />
-            </a>
-          </div>
-        </div>
-
-        <div class="contact__formContent">
-          <h2 class="h2-heading">
-            Let’s Work <br />
-            Together!
-          </h2>
-          <form action="results.html">
-            <div class="contact__inputs">
-              <input type="text" class="contact__input" name="name" placeholder="Full Name" required />
-              <!-- <input type="email" class="contact__input" placeholder="Email" required /> -->
-              <input
-                type="tel"
-                class="contact__input"
-                placeholder="Phone No."
-                name="tel"
-                required
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-              />
-            </div>
-            <textarea
-              class="contact__input contact__textarea"
-              name="message"
-              placeholder="Your Message"
-              rows="1"
-            ></textarea>
-            <input type="submit" class="contact__button" value="Send Message" />
-          </form>
-        </div>
-      </section>
-
-      <footer class="footer">© 2025 by Ahmed Ehap</footer>
-
-
-    </div>
-  </body>
+  <footer class="footer">© <span id="year"></span> Ahmed Ehab Abdalmeged</footer>
+  <script src="./script.js"></script>
+</body>
 </html>
